@@ -1,0 +1,1470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter.woff2") format("woff2"), url("fonts/inter.woff") format("woff");
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  display: none;
+}
+
+header {
+  position: fixed;
+  background-color: #ffffff;
+  padding-top: 30px;
+  margin-top: -20px;
+  width: 1920px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(184, 182, 182);
+  z-index: 2;
+}
+header .lin, header .lis {
+  display: none;
+}
+header #label {
+  display: none;
+}
+header .logo {
+  height: 40px;
+  width: auto;
+  margin-top: -10px;
+}
+header ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+header ul li {
+  color: #000000;
+}
+header ul .li {
+  color: rgb(191, 53, 53);
+}
+header ul a {
+  text-decoration: none;
+}
+header ul .registr {
+  display: flex;
+  margin-top: -10px;
+  gap: 20px;
+}
+header ul .registr .human {
+  width: 60px;
+  height: 60px;
+}
+header ul .registr .human img {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+}
+header ul .registr .human .private {
+  white-space: nowrap;
+  margin-left: -80px;
+  color: #000000;
+  border: 1px solid white;
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  background: #fff;
+  display: none;
+}
+header ul .registr .human img:hover ~ .private {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul .registr .dostavka {
+  cursor: pointer;
+}
+header ul .registr .dostavka .p {
+  color: #000000;
+  border: 2px solid rgb(191, 53, 53);
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.longer {
+  width: 1920px;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.longer a {
+  text-decoration: none;
+  color: #000000;
+}
+.longer .longest {
+  width: 555px;
+  height: 104px;
+  justify-content: flex-start;
+}
+.longer .longest input[type=checkbox] {
+  display: none;
+}
+.longer .longest #menu1 {
+  display: none;
+}
+.longer .longest #btn_1:checked ~ #menu1 {
+  display: block;
+  width: 282px;
+  height: 104px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 5px;
+  position: fixed;
+  box-shadow: 0 0 10px grey;
+  z-index: 2;
+}
+.longer .longest #btn_1:checked ~ #menu1 p {
+  color: grey;
+  font-size: 13px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud {
+  display: flex;
+  gap: 10px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud p {
+  color: rgb(191, 53, 53);
+}
+
+.cry {
+  width: 1672px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+.fds {
+  display: none;
+}
+
+#cry:checked ~ .cries {
+  display: block;
+  width: 1463px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 207px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.gher {
+  width: 1690px;
+  display: flex;
+  justify-content: flex-end;
+}
+.gher .hex {
+  width: 1485px;
+  border: 2px solid rgb(186, 188, 191);
+  height: 2px;
+  margin-top: -50px;
+  border-radius: 2px;
+}
+
+.cries {
+  display: none;
+}
+
+.hanling {
+  width: auto;
+  display: flex;
+}
+.hanling .tel_number {
+  width: 460px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hanling .tel_number h2 {
+  font-weight: lighter;
+}
+.hanling .tel_number p {
+  font-size: 14px;
+}
+.hanling .tel_number .pred {
+  color: rgb(191, 53, 53);
+}
+.hanling #dow_1:checked ~ #down_1 #lie {
+  display: block;
+  width: 400px;
+  height: 120px;
+}
+.hanling #dow_1:checked ~ .up img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: 200ms ease-in;
+  background-color: rgb(191, 53, 53);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 5px 4px;
+}
+.hanling #dow_2:checked ~ #down_2 #lie_2 {
+  display: block;
+  width: 400px;
+  height: 120px;
+}
+.hanling #dow_2:checked ~ .up_2 img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: 200ms ease-in;
+  background-color: rgb(191, 53, 53);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 5px 4px;
+}
+.hanling #dow_3:checked ~ #down_3 #lie_3 {
+  display: block;
+  width: 400px;
+  height: 120px;
+}
+.hanling #dow_3:checked ~ .up_3 img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: 200ms ease-in;
+  background-color: rgb(191, 53, 53);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 5px 4px;
+}
+.hanling #dow_4:checked ~ #down_4 #lie_4 {
+  display: block;
+  width: 400px;
+  height: 120px;
+}
+.hanling #dow_4:checked ~ .up_4 img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: 200ms ease-in;
+  background-color: rgb(191, 53, 53);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 5px 4px;
+}
+.hanling .strells {
+  width: 860px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.hanling .strells .down {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hanling .strells .down .up, .hanling .strells .down .up_3, .hanling .strells .down .up_4, .hanling .strells .down .up_2 {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hanling .strells .down .up img, .hanling .strells .down .up_3 img, .hanling .strells .down .up_4 img, .hanling .strells .down .up_2 img {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 5px 4px;
+}
+.hanling .strells .down input[type=checkbox] {
+  display: none;
+}
+.hanling .strells .down #lie {
+  display: none;
+}
+.hanling .strells .down #lie ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hanling .strells .down #lie_2 {
+  display: none;
+}
+.hanling .strells .down #lie_2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hanling .strells .down #lie_3 {
+  display: none;
+}
+.hanling .strells .down #lie_3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hanling .strells .down #lie_4 {
+  display: none;
+}
+.hanling .strells .down #lie_4 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hanling .strells .down .hr {
+  width: auto;
+  height: 2px;
+  border: 2px solid rgb(225, 225, 226);
+  margin-top: -20px;
+}
+
+.cost_mobiller {
+  display: none;
+}
+
+.container {
+  width: 1463px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 207px;
+}
+.container .cost_mobile {
+  width: 315px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container .cost_mobile input[type=checkbox] {
+  color: rgb(191, 53, 53);
+}
+.container .cost_mobile .sena {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .cost_mobile .sena img {
+  width: 18px;
+  height: 13px;
+}
+.container .cost_mobile .numbers {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+.container .cost_mobile .numbers h2 {
+  font-weight: lighter;
+}
+.container .cost_mobile .numbers hr {
+  width: 120px;
+  height: 3px;
+}
+.container .cost_mobile .app {
+  width: 315px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .cost_mobile .app .red_cyrcle {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(191, 53, 53);
+  border-radius: 50%;
+}
+.container .cost_mobile .app .line {
+  width: 315px;
+  height: 3px;
+  background: rgb(191, 53, 53);
+}
+.container .cost_mobile .marka {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .cost_mobile .marka .heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .cost_mobile .marka .heading img {
+  width: 18px;
+  height: 13px;
+}
+.container .cost_mobile .marka .inp_check {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgb(34, 34, 34);
+}
+.container .cost_mobile .model {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .cost_mobile .model .combos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .cost_mobile .model .combos img {
+  width: 18px;
+  height: 13px;
+}
+.container .cost_mobile .model .inpu_check {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgb(34, 34, 34);
+}
+.container .cost_mobile .model .inpu_check .eshyo {
+  width: 158px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: black;
+}
+.container .cost_mobile .pered {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .cost_mobile .pered .combone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .cost_mobile .pered .combone img {
+  width: 18px;
+  height: 13px;
+}
+.container .cost_mobile .pered .in_check {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgb(34, 34, 34);
+}
+.container .toyota_cars {
+  width: 1045px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container .toyota_cars .conclugion {
+  width: 1065px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .toyota_cars .conclugion .pass img {
+  display: none;
+}
+.container .toyota_cars .conclugion .tags {
+  width: auto;
+  display: flex;
+  gap: 20px;
+}
+.container .toyota_cars .conclugion .tags p {
+  width: 46px;
+  height: 27px;
+  color: rgb(191, 53, 53);
+  border: 2px solid rgb(191, 53, 53);
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .toyota_cars .conclugion .tags h4 {
+  width: auto;
+  height: 27px;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .toyota_cars .canvy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.container .toyota_cars .canvy .mobil {
+  width: 335px;
+  height: 620px;
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal {
+  width: 305px;
+  height: auto;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal .credit {
+  width: 315px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 30px;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal .credit p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  width: auto;
+  height: 29px;
+  background-color: rgb(231, 231, 232);
+  border-radius: 2px;
+  font-size: 14px;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal img {
+  width: 275px;
+  height: 136px;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal .h_two {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal .h_two h2 {
+  font-weight: lighter;
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal .h_two .red {
+  color: rgb(191, 53, 53);
+}
+.container .toyota_cars .canvy .mobil .mobil_loyal button {
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 2px solid rgb(191, 53, 53);
+  border-radius: 2px;
+  background-color: #fff;
+  width: 275px;
+  height: 52px;
+}
+.container .toyota_cars .footerblok {
+  width: 1068px;
+  height: 126px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .toyota_cars .footerblok .black {
+  width: 965px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .toyota_cars .footerblok .black .pandh {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .toyota_cars .footerblok .black .pandh p {
+  color: #ffffff;
+}
+.container .toyota_cars .footerblok .black .pandh .hbig {
+  font-size: 32px;
+}
+.container .toyota_cars .footerblok .black .vidth {
+  height: 42px;
+  width: 160px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.container .toyota_cars .footerblok .black .vidth p {
+  color: #fff;
+  width: 27px;
+  width: auto;
+}
+.container .toyota_cars .list {
+  width: 1045px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container .toyota_cars .list .listnum {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .toyota_cars .list .listnum .four {
+  color: #fff;
+  background-color: #000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .toyota_cars .list .listnum p {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+  cursor: default;
+}
+.container .toyota_cars .list .listnum p:hover {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(191, 53, 53);
+  color: rgb(191, 53, 53);
+  border-radius: 3px;
+}
+.container .toyota_cars .list .listnum img {
+  width: 20px;
+  height: 20px;
+}
+.container .toyota_cars .ingo {
+  width: 1068px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(186, 188, 191);
+  font-size: 14px;
+}
+.container .toyota_cars .ingo .lkl {
+  display: flex;
+  gap: 20px;
+}
+.container .toyota_cars .ingo .lkl .opp {
+  width: auto;
+  height: 2px;
+  border: 1px solid rgb(186, 188, 191);
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+  border: 1.5px solid black;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+}
+input:checked {
+  border: 1px solid red;
+}
+input:checked::before {
+  content: "";
+  width: 32%;
+  border: 0.5px solid red;
+  position: absolute;
+  top: 8px;
+  left: 0.5px;
+  transform: rotate(45deg);
+}
+input:checked:after {
+  content: "";
+  width: 65%;
+  border: 0.5px solid red;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  transform: rotate(130deg);
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 360px) {
+  #set {
+    display: none;
+  }
+  #set:checked ~ nav {
+    display: block;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    width: 280px;
+    height: 720px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 10px black;
+  }
+  #set:checked ~ nav .jet {
+    width: 150px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-top: 30px;
+  }
+  #set:checked ~ nav .jet .lod {
+    width: 150px;
+    display: flex;
+    gap: 20px;
+  }
+  #set:checked ~ nav .jet .lod label img {
+    transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+  }
+  #set:checked ~ nav .jet .lod #jit {
+    width: 100px;
+    height: 24px;
+  }
+  #set:checked ~ nav .jet .selec {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #set:checked ~ nav .jet .selec a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    gap: 16px;
+  }
+  #set:checked ~ nav .fuut {
+    width: 188px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #set:checked ~ nav .fuut .for {
+    display: flex;
+    width: 188px;
+    gap: 16px;
+    height: 46px;
+    align-items: center;
+  }
+  #set:checked ~ nav .fuut .for img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  #set:checked ~ nav .fuut .for .vide {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: nowrap;
+    color: #070404;
+  }
+  #set:checked ~ nav .fuut .for .vide h4 {
+    color: #000;
+  }
+  #set:checked ~ nav .fuut .like {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+  #set:checked ~ nav .fuut .like p {
+    color: #000000;
+  }
+  header {
+    width: 360px;
+    height: 52px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255) 0%;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 20px;
+    z-index: 2;
+    margin-left: 0px;
+  }
+  header #label {
+    display: block;
+  }
+  header #lines, header #call {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: -10px;
+  }
+  header .lin {
+    margin-left: 15px;
+  }
+  header .lis {
+    margin-right: 15px;
+  }
+  header .logo {
+    height: 30px;
+    width: auto;
+  }
+  header ul {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .longer {
+    width: 328px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .longer #gas {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    padding: 12px;
+    position: fixed;
+    margin-top: 200px;
+    margin-left: -20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 8px;
+    z-index: 2;
+  }
+  .longer .longest {
+    display: none;
+  }
+  .cry {
+    width: 328px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #cry {
+    display: none;
+  }
+  #cry:checked ~ .cries {
+    display: block;
+    width: 328px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    margin-left: 16px;
+  }
+  .gher {
+    width: 328px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .gher .hex {
+    width: 328px;
+    border: 2px solid rgb(186, 188, 191);
+    height: 2px;
+    margin-top: -50px;
+    border-radius: 2px;
+  }
+  #btn_1:checked ~ #menu1 ~ .private {
+    display: none;
+  }
+  .hanling {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .hanling .tel_number {
+    width: 328px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hanling .tel_number h2 {
+    font-weight: lighter;
+  }
+  .hanling .tel_number p {
+    font-size: 14px;
+  }
+  .hanling .tel_number .pred {
+    color: rgb(191, 53, 53);
+  }
+  .hanling #dow_1:checked ~ #down_1 #lie {
+    display: block;
+    width: 290px;
+    height: 120px;
+  }
+  .hanling #dow_1:checked ~ .up img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: 200ms ease-in;
+    background-color: rgb(191, 53, 53);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px 4px;
+  }
+  .hanling #dow_2:checked ~ #down_2 #lie_2 {
+    display: block;
+    width: 328px;
+    height: 120px;
+  }
+  .hanling #dow_2:checked ~ .up_2 img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: 200ms ease-in;
+    background-color: rgb(191, 53, 53);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px 4px;
+  }
+  .hanling #dow_3:checked ~ #down_3 #lie_3 {
+    display: block;
+    width: 328px;
+    height: 120px;
+  }
+  .hanling #dow_3:checked ~ .up_3 img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: 200ms ease-in;
+    background-color: rgb(191, 53, 53);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px 4px;
+  }
+  .hanling #dow_4:checked ~ #down_4 #lie_4 {
+    display: block;
+    width: 328px;
+    height: 120px;
+  }
+  .hanling #dow_4:checked ~ .up_4 img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: 200ms ease-in;
+    background-color: rgb(191, 53, 53);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px 4px;
+  }
+  .hanling .strells {
+    width: 328px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .hanling .strells .down {
+    width: 328px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hanling .strells .down .up, .hanling .strells .down .up_3, .hanling .strells .down .up_4, .hanling .strells .down .up_2 {
+    width: 328px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hanling .strells .down .up img, .hanling .strells .down .up_3 img, .hanling .strells .down .up_4 img, .hanling .strells .down .up_2 img {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 5px 4px;
+  }
+  .hanling .strells .down input[type=checkbox] {
+    display: none;
+  }
+  .hanling .strells .down #lie {
+    display: none;
+  }
+  .hanling .strells .down #lie ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hanling .strells .down #lie_2 {
+    display: none;
+  }
+  .hanling .strells .down #lie_2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hanling .strells .down #lie_3 {
+    display: none;
+  }
+  .hanling .strells .down #lie_3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hanling .strells .down #lie_4 {
+    display: none;
+  }
+  .hanling .strells .down #lie_4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hanling .strells .down .hr {
+    width: auto;
+    height: 2px;
+    border: 2px solid rgb(225, 225, 226);
+    margin-top: -20px;
+  }
+  #btn_1:checked ~ #menu1 ~ .private {
+    display: none;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  #yoq:checked ~ .hanling {
+    display: none;
+  }
+  .bit {
+    display: none;
+  }
+  #cost:checked ~ .cost_mobiller {
+    display: block;
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -140px;
+    gap: 50px;
+    padding: 16px;
+  }
+  #cost:checked ~ .cost_mobiller .kead {
+    width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cost:checked ~ .cost_mobiller .kead .logo {
+    height: 24px;
+  }
+  #cost:checked ~ .cost_mobiller input[type=checkbox] {
+    color: rgb(191, 53, 53);
+  }
+  #cost:checked ~ .cost_mobiller .sena {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cost:checked ~ .cost_mobiller .sena img {
+    width: 18px;
+    height: 13px;
+  }
+  #cost:checked ~ .cost_mobiller .numbers {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+  }
+  #cost:checked ~ .cost_mobiller .numbers h2 {
+    font-weight: lighter;
+  }
+  #cost:checked ~ .cost_mobiller .numbers hr {
+    width: 120px;
+    height: 3px;
+  }
+  #cost:checked ~ .cost_mobiller .app {
+    width: 315px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #cost:checked ~ .cost_mobiller .app .red_cyrcle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(191, 53, 53);
+    border-radius: 50%;
+  }
+  #cost:checked ~ .cost_mobiller .app .line {
+    width: 315px;
+    height: 3px;
+    background: rgb(191, 53, 53);
+  }
+  #cost:checked ~ .cost_mobiller .marka {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #cost:checked ~ .cost_mobiller .marka .heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cost:checked ~ .cost_mobiller .marka .heading img {
+    width: 18px;
+    height: 13px;
+  }
+  #cost:checked ~ .cost_mobiller .marka .inp_check {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: rgb(34, 34, 34);
+  }
+  #cost:checked ~ .cost_mobiller .model {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #cost:checked ~ .cost_mobiller .model .combos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cost:checked ~ .cost_mobiller .model .combos img {
+    width: 18px;
+    height: 13px;
+  }
+  #cost:checked ~ .cost_mobiller .model .inpu_check {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: rgb(34, 34, 34);
+  }
+  #cost:checked ~ .cost_mobiller .model .inpu_check .eshyo {
+    width: 158px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: black;
+  }
+  #cost:checked ~ .cost_mobiller .pered {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #cost:checked ~ .cost_mobiller .pered .combone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cost:checked ~ .cost_mobiller .pered .combone img {
+    width: 18px;
+    height: 13px;
+  }
+  #cost:checked ~ .cost_mobiller .pered .in_check {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: rgb(34, 34, 34);
+  }
+  #cost:checked ~ .container {
+    display: none;
+  }
+  .container {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+  }
+  .container .cost_mobile {
+    display: none;
+  }
+  .container .toyota_cars {
+    width: 328px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container .toyota_cars .conclugion {
+    width: 328px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .toyota_cars .conclugion .pass .tags {
+    display: none;
+  }
+  .container .toyota_cars .conclugion .pass img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .container .toyota_cars .conclugion .tags {
+    width: auto;
+    display: flex;
+    gap: 20px;
+  }
+  .container .toyota_cars .conclugion .tags p {
+    width: 46px;
+    height: 27px;
+    color: rgb(191, 53, 53);
+    border: 2px solid rgb(191, 53, 53);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .toyota_cars .conclugion .tags h4 {
+    width: auto;
+    height: 27px;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .toyota_cars .canvy {
+    width: 328px;
+    height: 1955px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .container .toyota_cars .canvy .mobil {
+    width: 161px;
+    height: 240px;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal {
+    width: 145px;
+    height: 240px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 8px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal p {
+    font-size: 8px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal h4 {
+    font-size: 10px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .credit {
+    width: 215px;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .credit p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    height: 15px;
+    background-color: rgb(231, 231, 232);
+    border-radius: 2px;
+    font-size: 8px;
+    box-sizing: border-box;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .credit p:nth-of-type(3) {
+    position: absolute;
+    margin-top: 20px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal img {
+    width: 145px;
+    height: 60px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .h_two {
+    display: flex;
+    text-transform: uppercase;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .h_two h2 {
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal .h_two .red {
+    color: rgb(191, 53, 53);
+  }
+  .container .toyota_cars .canvy .mobil .mobil_loyal button {
+    display: none;
+  }
+  .container .toyota_cars .footerblok {
+    width: 328px;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .toyota_cars .footerblok .black {
+    width: 304px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .container .toyota_cars .footerblok .black p {
+    white-space: nowrap;
+  }
+  .container .toyota_cars .footerblok .black .pandh {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container .toyota_cars .footerblok .black .pandh p {
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .container .toyota_cars .footerblok .black .pandh .hbig {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .container .toyota_cars .footerblok .black .vidth {
+    height: 42px;
+    width: 160px;
+    border: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+  }
+  .container .toyota_cars .footerblok .black .vidth p {
+    display: none;
+  }
+  .container .toyota_cars .list {
+    width: 328px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .container .toyota_cars .list .listnum {
+    height: 33px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .container .toyota_cars .list .listnum .four {
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .toyota_cars .list .listnum p {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 3px;
+    cursor: default;
+  }
+  .container .toyota_cars .list .listnum p:hover {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(191, 53, 53);
+    color: rgb(191, 53, 53);
+    border-radius: 3px;
+  }
+  .container .toyota_cars .list .listnum img {
+    width: 20px;
+    height: 20px;
+  }
+  .container .toyota_cars .ingo {
+    width: 328px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(186, 188, 191);
+    font-size: 14px;
+  }
+  .container .toyota_cars .ingo .lkl {
+    display: none;
+  }
+}/*# sourceMappingURL=arenda.css.map */

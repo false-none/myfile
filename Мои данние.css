@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter.woff2") format("woff2"), url("fonts/inter.woff") format("woff");
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.li {
+  color: rgb(191, 53, 53);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  background-color: #ffffff;
+  padding-top: 30px;
+  width: 1920px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(184, 182, 182);
+  z-index: 5;
+}
+header .logo {
+  height: 40px;
+  width: auto;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+header ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+header ul li {
+  color: #000000;
+}
+header ul .registr {
+  display: flex;
+  margin-top: -10px;
+  gap: 20px;
+}
+header ul .registr .human {
+  width: 60px;
+  height: 60px;
+}
+header ul .registr .human img {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+}
+header ul .registr .human .private {
+  white-space: nowrap;
+  margin-left: -80px;
+  color: #000000;
+  border: 1px solid white;
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  background: #fff;
+  display: none;
+}
+header ul .registr .human img:hover ~ .private {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul .registr .p {
+  color: #000000;
+  border: 2px solid rgb(191, 53, 53);
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.longer {
+  width: 1920px;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.longer .longest {
+  width: 555px;
+  height: 104px;
+  justify-content: flex-start;
+}
+.longer .longest input[type=checkbox] {
+  display: none;
+}
+.longer .longest #menu1 {
+  display: none;
+}
+.longer .longest #btn_1:checked ~ #menu1 {
+  display: block;
+  width: 282px;
+  height: 104px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px grey;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 6;
+}
+.longer .longest #btn_1:checked ~ #menu1 p {
+  color: grey;
+  font-size: 13px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud {
+  display: flex;
+  gap: 10px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud p {
+  color: rgb(191, 53, 53);
+}
+
+.container {
+  display: flex;
+  margin-left: 207px;
+  width: 1700px;
+  height: 900px;
+}
+.container .behind {
+  width: 178px;
+  height: 1000px;
+  border-right: 3px solid rgb(224, 220, 220);
+  margin-top: -100px;
+}
+.container .behind .json {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .behind #id {
+  margin-top: 30px;
+}
+.container .asosiy {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: -50px;
+}
+.container .asosiy .hight {
+  width: 1350px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .asosiy .hight .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1300px;
+}
+.container .asosiy .hight .top .cycle {
+  display: flex;
+  gap: 30px;
+  width: 480px;
+  height: 75px;
+}
+.container .asosiy .hight .top .cycle .cyc {
+  width: 75px;
+  height: 75px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.container .asosiy .hight .top .cycle .hip {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-transform: uppercase;
+}
+.container .asosiy .hight .top .cords {
+  width: 555px;
+  height: 53px;
+  display: flex;
+  gap: 15px;
+}
+.container .asosiy .hight .top .cords .schyot {
+  width: 203px;
+  height: 53px;
+  display: flex;
+}
+.container .asosiy .hight .top .cords .schyot .rect {
+  width: 81px;
+  height: 53px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px gray;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+}
+.container .asosiy .hight .top .cords .schyot .rect .bir {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.container .asosiy .hight .top .cords .schyot .rect .bir img {
+  width: 13px;
+  height: 13px;
+}
+.container .asosiy .hight .top .cords .schyot .rect .ikki {
+  margin-left: 10px;
+}
+.container .asosiy .hight .top .cords .schyot .rect:nth-of-type(1) {
+  z-index: 4;
+}
+.container .asosiy .hight .top .cords .schyot .rect:nth-of-type(4) {
+  margin-left: 123px;
+  z-index: 1;
+}
+.container .asosiy .hight .top .cords .schyot .rect:nth-of-type(3) {
+  margin-left: 82px;
+  z-index: 2;
+}
+.container .asosiy .hight .top .cords .schyot .rect:nth-of-type(2) {
+  margin-left: 41px;
+  z-index: 3;
+}
+.container .asosiy .hight .top .cords .card {
+  width: 203px;
+  height: 53px;
+  display: flex;
+  margin-left: 10px;
+}
+.container .asosiy .hight .top .cords .card .cards {
+  width: 95px;
+  height: 53px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(84, 84, 84);
+  background-color: rgb(34, 34, 34);
+  border-right: 2px solid #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+}
+.container .asosiy .hight .top .cords .card .cards .bir {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  padding-left: 10px;
+  background-color: rgb(96, 101, 105);
+}
+.container .asosiy .hight .top .cords .card .cards .bir img {
+  width: 13px;
+  height: 13px;
+}
+.container .asosiy .hight .top .cords .card .cards .ikki {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+.container .asosiy .hight .top .cords .card .cards:nth-of-type(1) {
+  z-index: 4;
+}
+.container .asosiy .hight .top .cords .card .cards:nth-of-type(4) {
+  margin-left: 123px;
+  z-index: 1;
+}
+.container .asosiy .hight .top .cords .card .cards:nth-of-type(3) {
+  margin-left: 82px;
+  z-index: 2;
+}
+.container .asosiy .hight .top .cords .card .cards:nth-of-type(2) {
+  margin-left: 41px;
+  z-index: 3;
+}
+.container .asosiy .hight .top .cords .plus {
+  width: 36px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  border: 2px solid rgb(186, 188, 191);
+  border-radius: 4px;
+}
+.container .asosiy .hight .top .cords .plus p {
+  font-size: 25px;
+  color: rgb(186, 188, 191);
+}
+.container .wrapper {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.container .wrapper .inpat {
+  width: 1244px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrapper .inpat .fio {
+  width: 450px;
+  height: 521px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container .wrapper .inpat .fio input {
+  height: 42px;
+  border: 0;
+  border-bottom: 2px solid rgb(231, 231, 232);
+}
+.container .wrapper .inpat .fio .inp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .wrapper .inpat .meneg {
+  width: 300px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 0 10px grey;
+}
+.container .wrapper .inpat .meneg .h1 {
+  width: 260px;
+  height: 179px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container .wrapper .inpat .meneg .boot {
+  display: flex;
+  gap: 20px;
+  width: 260px;
+  height: 124px;
+  gap: 20px;
+}
+.container .wrapper .inpat .meneg .boot .left {
+  width: 200px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container .wrapper .inpat .meneg .boot .left p {
+  white-space: nowrap;
+}
+.container .wrapper .inpat .meneg .boot .right {
+  height: 124px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer {
+  width: 1173px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .footer p {
+  color: rgb(186, 188, 191);
+  border-bottom: 3px solid rgb(186, 188, 191);
+}
+.container .footer .span {
+  display: flex;
+  gap: 10px;
+}
+
+nav, .lin, .lis, #label, #set {
+  display: none;
+}
+
+@media screen and (max-width: 378px) {
+  #set {
+    display: none;
+  }
+  #set:checked ~ nav {
+    display: block;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    width: 280px;
+    height: 720px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0 10px black;
+  }
+  #set:checked ~ nav .jet {
+    width: 150px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-top: 30px;
+  }
+  #set:checked ~ nav .jet .lod {
+    width: 150px;
+    display: flex;
+    gap: 20px;
+  }
+  #set:checked ~ nav .jet .lod p {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    height: 24px;
+    align-items: center;
+  }
+  #set:checked ~ nav .jet .lod label {
+    display: flex;
+    gap: 5px;
+  }
+  #set:checked ~ nav .jet .lod label img {
+    transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+  }
+  #set:checked ~ nav .jet .lod #jit {
+    width: 100px;
+    height: 24px;
+  }
+  #set:checked ~ nav .jet .selec {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #set:checked ~ nav .jet .selec a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    gap: 16px;
+  }
+  #set:checked ~ nav .fuut {
+    width: 188px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #set:checked ~ nav .fuut .for {
+    display: flex;
+    width: 188px;
+    gap: 16px;
+    height: 46px;
+    align-items: center;
+  }
+  #set:checked ~ nav .fuut .for img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  #set:checked ~ nav .fuut .for .vide {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: nowrap;
+    color: #070404;
+  }
+  #set:checked ~ nav .fuut .for .vide a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: grey;
+    display: flex;
+    height: 30px;
+    align-items: center;
+  }
+  header {
+    width: 360px;
+    height: 52px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255) 0%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    z-index: 2;
+    margin-left: 0px;
+  }
+  header #label {
+    display: block;
+  }
+  header #lines, header #call {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: -10px;
+  }
+  header .lin {
+    margin-left: 15px;
+  }
+  header .lis {
+    margin-right: 15px;
+  }
+  header .logo {
+    height: 30px;
+    width: auto;
+  }
+  header ul {
+    display: none;
+  }
+  .longer {
+    display: none;
+  }
+  .container {
+    display: flex;
+    margin-left: -50px;
+    padding: 16px;
+    width: 328px;
+    height: 900px;
+  }
+  .container .behind {
+    display: none;
+  }
+  .container .asosiy {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: -50px;
+  }
+  .container .asosiy .hight {
+    width: 328px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .asosiy .hight .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 328px;
+  }
+  .container .asosiy .hight .top .cycle {
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 328px;
+    height: 75px;
+    border-bottom: 2px solid grey;
+  }
+  .container .asosiy .hight .top .cycle .cyc {
+    width: 54px;
+    height: 54px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  .container .asosiy .hight .top .cycle .hip {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+  }
+  .container .asosiy .hight .top .cycle .hip h1 {
+    font-size: 20px;
+  }
+  .container .asosiy .hight .top .cycle .hip h2 {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .container .asosiy .hight .top .cords {
+    display: none;
+  }
+  .container .wrapper {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+  .container .wrapper .inpat {
+    width: 328px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .container .wrapper .inpat .fio {
+    width: 328px;
+    height: 521px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .container .wrapper .inpat .fio input {
+    height: 42px;
+    border: 0;
+    border-bottom: 2px solid rgb(231, 231, 232);
+  }
+  .container .wrapper .inpat .fio .inp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container .wrapper .inpat .meneg {
+    width: 328px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 0 10px grey;
+  }
+  .container .wrapper .inpat .meneg .h1 {
+    width: 260px;
+    height: 179px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .container .wrapper .inpat .meneg .boot {
+    display: flex;
+    gap: 20px;
+    width: 260px;
+    height: 124px;
+    margin-top: -100px;
+    gap: 20px;
+  }
+  .container .wrapper .inpat .meneg .boot .left {
+    width: 200px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .container .wrapper .inpat .meneg .boot .left p {
+    white-space: nowrap;
+  }
+  .container .wrapper .inpat .meneg .boot .right {
+    height: 124px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .footer {
+    width: 328px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .container .footer p {
+    color: rgb(186, 188, 191);
+    border-bottom: 3px solid rgb(186, 188, 191);
+    font-size: 12px;
+  }
+  .container .footer .span {
+    display: none;
+  }
+}/*# sourceMappingURL=Мои данние.css.map */

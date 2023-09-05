@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1900px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrepper{
+    width: 400px;
+    height: 10px;
+    margin: 0 auto;
+}
+input{
+    display: none;
+}
+
+.tabs {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+
+    .hr{
+        width: 30px;
+        height: 10px;
+        background-color: rgb(189, 189, 189);
+    }
+
+}
+
+.tabs label{
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab_one:checked ~ .wrepper .tabs .hr:nth-of-type(1) {
+    background: rgb(61, 65, 255);
+    transition: 100ms ease-in;
+}
+#tab_two:checked ~ .wrepper .tabs .hr:nth-of-type(2) {
+    background: rgb(61, 65, 255);
+    transition: 100ms ease-in;
+}
+#tab_three:checked ~ .wrepper .tabs .hr:nth-of-type(3) {
+    background: rgb(61, 65, 255);
+    transition: 100ms ease-in;
+}
+#tab_four:checked ~ .wrepper .tabs .hr:nth-of-type(4) {
+    background: rgb(61, 65, 255);
+    transition: 100ms ease-in;
+}
+#tab_five:checked ~ .wrepper .tabs .hr:nth-of-type(5) {
+    background: rgb(61, 65, 255);
+    transition: 100ms ease-in;
+}

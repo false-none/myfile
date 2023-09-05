@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter.woff2") format("woff2"), url("fonts/inter.woff") format("woff");
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.li {
+  color: rgb(191, 53, 53);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  background-color: #ffffff;
+  padding-top: 30px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  box-shadow: 0 0 10px rgb(184, 182, 182);
+  z-index: 5;
+}
+header .logo {
+  height: 40px;
+  width: auto;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+header ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+header ul li {
+  color: #000000;
+}
+header ul .registr {
+  display: flex;
+  margin-top: -10px;
+  gap: 20px;
+}
+header ul .registr .human {
+  width: 60px;
+  height: 60px;
+}
+header ul .registr .human img {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+}
+header ul .registr .human .private {
+  white-space: nowrap;
+  margin-left: -80px;
+  color: #000000;
+  border: 1px solid white;
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  background: #fff;
+  display: none;
+}
+header ul .registr .human img:hover ~ .private {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul .registr .p {
+  color: #000000;
+  border: 2px solid rgb(191, 53, 53);
+  border-radius: 2px;
+  height: 40px;
+  width: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.longer {
+  width: 1920px;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.longer .longest {
+  width: 555px;
+  height: 104px;
+  justify-content: flex-start;
+}
+.longer .longest input[type=checkbox] {
+  display: none;
+}
+.longer .longest #menu1 {
+  display: none;
+}
+.longer .longest #btn_1:checked ~ #menu1 {
+  display: block;
+  width: 282px;
+  height: 104px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px grey;
+  justify-content: center;
+  padding-left: 20px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 6;
+}
+.longer .longest #btn_1:checked ~ #menu1 p {
+  color: grey;
+  font-size: 13px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud {
+  display: flex;
+  gap: 10px;
+}
+.longer .longest #btn_1:checked ~ #menu1 .divloud p {
+  color: rgb(191, 53, 53);
+}
+
+.container {
+  display: flex;
+  margin-left: 207px;
+  width: 1700px;
+  height: 900px;
+}
+.container .behind {
+  width: 178px;
+  height: 1000px;
+  border-right: 3px solid rgb(224, 220, 220);
+  margin-top: -100px;
+}
+.container .behind .json {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .behind #id {
+  margin-top: 30px;
+}
+.container .asosiy {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: -50px;
+}
+.container .asosiy .hight {
+  width: 1290px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .asosiy .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1242px;
+  border-bottom: 3px solid rgb(184, 182, 182);
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+.container .asosiy .top .cycle {
+  display: flex;
+  gap: 30px;
+  width: 480px;
+  height: 75px;
+}
+.container .asosiy .top .cycle .cyc {
+  width: 75px;
+  height: 75px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.container .asosiy .top .cycle .hip {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-transform: uppercase;
+}
+.container .asosiy .wrapper {
+  width: 1242px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-left: 50px;
+}
+.container .asosiy .wrapper .tarmoq {
+  width: 1242px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .asosiy .wrapper .tarmoq .telegram {
+  width: 384px;
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.container .asosiy .wrapper .tarmoq .telegram .jpg {
+  width: 40px;
+  height: 194px;
+}
+.container .asosiy .wrapper .tarmoq .telegram .write {
+  width: 289px;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .asosiy .wrapper .tarmoq .telegram .img {
+  width: 100px;
+  height: 12px;
+}
+.container .asosiy .wrapper .tarmoq #what {
+  background: linear-gradient(#008517, #019D1D);
+  color: #fff;
+}
+.container .asosiy .footer {
+  width: 1242px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 50px;
+}
+.container .asosiy .footer .dic {
+  width: 1242px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .asosiy .footer .dic p {
+  color: rgb(186, 188, 191);
+  border-bottom: 2px solid rgb(186, 188, 191);
+}
+.container .asosiy .footer .dic .pic {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=whats.css.map */
